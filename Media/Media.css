@@ -1,0 +1,32 @@
+    body {
+        background-color: blue;
+        height: 100vh;
+    }
+
+
+    /* plancete bp 768px */
+
+    @media(min-width:768px){
+        body{
+            background-color: brown;
+        }
+    }
+
+    /* loptop bp 1024px */
+    @media (min-width: 1024px) {
+        body {
+            background-color: rgb(71, 179, 49);
+        }
+    }
+
+    @media (min-width: 1440px) {
+        body {
+            background-color: aquamarine;
+        }
+    }
+
+        @media (min-width: 2560px) {
+        body {
+            background-color: rgb(86, 79, 173);
+        }
+    }

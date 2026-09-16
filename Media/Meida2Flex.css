@@ -1,0 +1,105 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* kitaip procentai will not work be situ */
+body {
+    height: 100vh;
+    width: 100vw;
+}
+
+div {
+    background-color: aquamarine;
+    border: 1px solid white;
+
+}
+
+/* this is on small screen so we dont care */
+.bigc {
+    height: 40%;
+}
+
+.smallc {
+    height: 60%;
+}
+
+/* this unitl here was display on small screen so we dont care */
+
+.box1,
+.box2 {
+    height: 50%;
+}
+
+.box3,
+.box4,
+.box5 {
+    height: 33%;
+}
+
+/* we still dont care, because this on small screen */
+
+
+
+/* BIG SCREEN CGANGES IMPORTANT */
+@media(min-width: 480px) {
+
+    /* WE TELL that botx boxes will drop next to each other clean */
+    .bigc,
+    .smallc {
+        display: flex;
+    }
+
+
+    /* here bigc container will be like in picture bigger */
+    .bigc {
+        height: 70%;
+    }
+
+    /* here we say that secon small container heigh will be smaller so 
+    only 30%of the body */
+    .smallc {
+        height: 30%;
+    }
+
+
+    /*  first two bigger boxes are in div class bigc 
+    parent, so both heigh 100 proc but they will share 50/50 of weight */
+    .box1,
+    .box2 {
+        height: 100%;
+        width: 50%;
+    }
+
+    /* bottom childs of class smallc sontainer will also have height 100%, but since tyhey
+     are 3 of them, they will share equal 33.3333 of width */
+    .box3,
+    .box4,
+    .box5 {
+        height: 100%;
+        width: 33.3333%;
+    }
+
+/* just the colours of boxes */
+    .box1 {
+        background-color: rgb(224, 224, 116);
+    }
+
+    .box2 {
+        background-color: rgb(128, 212, 125);
+    }
+
+    .box3 {
+        background-color: rgb(80, 80, 55);
+    }
+
+    .box4 {
+        background-color: rgb(104, 58, 71);
+    }
+
+    .box5 {
+        background-color: rgb(75, 75, 12);
+    }
+
+}
