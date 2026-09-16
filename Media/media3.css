@@ -1,0 +1,38 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* kitaip procentai will not work be situ */
+body {
+    height: 100vh;
+    width: 100vw;
+}
+h2 {
+    text-align: center;
+}
+
+
+.food {
+    border: 1px solid black;
+    margin: 10px;
+}
+
+.food {background-color: rgb(192, 30, 70);}
+
+@media(min-width: 768px) {
+    .food {
+        width: 50%;
+
+    .container:nth-child(3){}}
+
+    }
+}
+
+
+@media(min-width: 1220px) {
+    .container {
+        display: flex;
+    }
+}
